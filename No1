@@ -1,1 +1,28 @@
+package tugas5.no1;
 
+import java.util.Scanner;
+
+public class Tugas5No1 {
+
+    public static class DisplayNumbers {
+
+        public static void numbers(int n) {
+            if (n >= 1) {
+                for (int i = 1; i <= n; i++) {
+                    System.out.println(i);
+                }
+            } else {
+                System.out.println("Angka harus lebih dari atau sama dengan 1");
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Masukkan n: ");
+        int n = input.nextInt();
+
+        DisplayNumbers.numbers(n);
+
+    }
+}
